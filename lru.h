@@ -87,8 +87,8 @@ V LRUCache::Get(K key) {
         return node->value;
     } else {
         ++count;
-        //Put(key, V());
-        return V();
+        Put(key, V());
+        //return V();
     }
 }
 
